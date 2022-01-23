@@ -1,0 +1,45 @@
+GET MANY FUNCTINOS:
+-get all recent media by JWT
+-get all types by JWT
+-get all files (category) by JWT
+-get media by type (unique name-type per user) and JWT
+-get media by file (category) and JWT
+-see directory (root files and media) and JWT
+
+GET ONE FUNCTIONS
+-get one asset by id
+-get one public asset by username and filename
+-get one assset by filepath and filename and JWT
+-get one public asset by username, filepath and filename
+-get one category by path
+-get one public category by  username and path
+-get one type by name and JWT
+
+SEARCH FUNCTIONS:
+-search by value: "jason" will serch all fields and arrays with value "jason" and JWT
+-search by field and value: name:"jason" will search WHERE attributeName=name AND attributeValue=jason
+-search by type, field and value: People name: "jason"
+-search by type and value: People: "jason"
+-many searches: "jason", "whatever", People name: "jason"
+
+CREATE/UPDATE/DELETE:
+-upload media
+-create type
+-create category (file)
+-add types to media
+-remove types to media
+-edit media types and values
+-delete media
+-delete category
+-delete type
+-create account
+-set asset as public
+-set asset as private
+-set type as public
+-set type as private
+-set folder as public
+-set folder as private
+
+
+
+REMEBER: medias can be put into certain categories, but all searches are global unless specified to be nested

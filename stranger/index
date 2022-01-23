@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Desabafe</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="uft-8" />
+</head>
+
+<body>
+    <!-- menu-->
+    <nav>
+        <ul>
+            <li class="logo"><a href="">Desabafo</a></li>
+            <li class="menu"><a href="sobre.html">Sobre</a></li>
+            <li class="menu"><a href="recentes.html">Recentes</a></li>
+            <li class="menu"><a href="index.html">Home</a></li>
+            <li id="menuIcon"><a href="javascript:void(0);"onclick="myFunction()"><img src="img/menu.png"></a></li>
+        </ul>
+    </nav>
+    <!--header-->
+    <header>
+        <h1>Desabafe</h1>
+        <P>Aqui é um lugar para você desabafar, discutir e pedir dicas. Exponha sua opinião, dúvida ou desabafo
+            de forma anônima.</P>
+    </header>
+    <div class="main">
+        <!--criar desabafo-->
+        <section id="desabafo">
+            <div class="container">
+                <h1>Criar desabafo</h1>
+                <div class="postar">
+                    <!--pai-->
+                    <textarea placeholder="Whats on your mind?"></textarea>
+                    <!--child-->
+                    <div class="botao"><a href="#" class="">postar</a>
+                        <!--child-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Recentes-->
+        <section id="recentes">
+
+            <div class="container">
+                <h1>Recentes</h1>
+                <div class="post">
+                        <div class="metadata">
+                            <img class="thumbnail" src="img/thumbnail.png"></img>
+                            <div class="head">
+                                    <h1 class="data">Pedro</h1>
+                                    <h1 class="data">20/03/2019</h1>
+                            </div>
+                            </div>
+                            <h1 class="titulo">Fazer que o sei nao e outro comprou ele agora e irmão meu de celular o escondi
+                        </h1>
+                        <p>Queria só mal a fiz nao eu mas pagar, faça me ele que medo com estou não, ou contar devo eu se
+                            não eu
+                            e
+                            outro comprou ele agora mas ele com bravo estva eu porque irmão meu de celular o escondi eu que
+                            semana
+                            uma faz queria só mal a fiz nao eu mas pagar, faça me ele que medo com estou não, ou contar devo
+                            eu
+                            se
+                            não eu e outro comprou ele agora mas ele com bravo estva eu porque irmão meu de celular o
+                            escondi eu
+                            que
+                            semana uma faz....</p>
+                        <div class="botao2"><a href="#" class="">ler mais</a></div>
+                    </div>
+                    
+            </div>
+        </section>
+        <section id="populares">
+
+            <div class="container">
+                <h1>Populares</h1>
+                <div class="postpequeno"><div class="metadata">
+                        <img class="thumbnail" src="img/thumbnail.png"></img>
+                        <div class="head">
+                                <h1 class="data">Pedro</h1>
+                                <h1 class="data">20/03/2019</h1>
+                        </div>
+                        </div>
+                    <h1 class="titulo">Fazer que o sei nao e outro comprou ele agora e irmão meu de celular o escondi
+                    </h1>
+                    <p>Queria só mal a fiz nao eu mas pagar, faça me ele que medo com estou não, ou contar devo eu se
+                        não eu
+                        e
+                        ...</p>
+                    <div class="botao2"><a href="#" class="">ler mais</a></div>
+                </div>   <div class="postpequeno"><div class="metadata">
+                        <img class="thumbnail" src="img/thumbnail.png"></img>
+                        <div class="head">
+                                <h1 class="data">Pedro</h1>
+                                <h1 class="data">20/03/2019</h1>
+                        </div>
+                        </div>
+                        <h1 class="titulo">Fazer que o sei nao e outro comprou ele agora e irmão meu de celular o escondi
+                        </h1>
+                        <p>Queria só mal a fiz nao eu mas pagar, faça me ele que medo com estou não, ou contar devo eu se
+                            não eu
+                            e
+                            ...</p>
+                        <div class="botao2"><a href="#" class="">ler mais</a></div>
+                    </div>
+        </section>
+    </div>
+
+    <footer>
+        <ul class="footer-left">
+            <li>Desabafe - Todos os direitos reservados 2018</li>
+        </ul>
+        <ul class="footer-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recentes.html">Recentes</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

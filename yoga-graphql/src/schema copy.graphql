@@ -1,0 +1,163 @@
+type Asset {
+  id: ID!
+  description: String
+  name: String!
+  blob: String!
+  tags: [Tag!]!
+}
+
+type Category {
+  id: ID!
+  name: String!
+  description: String
+  tags: [Tag!]!
+  breadcrumb: String!
+  content: [Asset!]!
+  subcategories: [Category!]!
+  supercategory: [Category!]!
+}
+
+type Tag {
+  id: ID!
+  name: String!
+  description: String!
+  content: [AssetOrCategory!]
+}
+
+
+type Type {
+    name: String!
+    attributes: [Attribute!]
+}
+
+type Attribute {
+    name: String!
+    value: StringOrArrayValue
+}
+
+type StringAttribute {
+  value: String
+}
+type ArrayAttribute {
+  value: [String!]
+}
+type BooleanAttribute {
+  value:type Asset {
+  id: ID!
+  description: String
+  name: String!
+  blob: String!
+  tags: [Tag!]!
+}
+
+type Category {
+  id: ID!
+  name: String!
+  description: String
+  tags: [Tag!]!
+  breadcrumb: String!
+  content: [Asset!]!
+  subcategories: [Category!]!
+  supercategory: [Category!]!
+}
+
+type Tag {
+  id: ID!
+  name: String!
+  description: String!
+  content: [AssetOrCategory!]
+}
+
+
+type Type {
+    name: String!
+    attributes: [Attribute!]
+}
+
+type Attribute {
+    name: String!
+    value: AttributeType
+}
+
+type StringAttribute {
+  value: String
+}
+type ArrayAttribute {
+  value: [String!]
+}
+type BooleanAttribute {
+  value: Boolean
+}
+type IntegerAttribute {
+  value: Int
+}
+type TypeAttribute {
+  value: Type
+}
+
+
+union AttributeType = StringAttributeType | ArrayAttributeType
+| BooleanAttributeType | IntegerAttributeType | TypeAttribute
+union AssetOrCategory = Asset | Category
+union AllSearchResult = Asset | Category | Tag
+
+enum SortBy {
+  latest,
+  popular,
+  oldest,
+  biggest
+}
+
+enum SortAssetBy {
+  latest,
+  oldest
+}
+
+
+type Query {
+  getAllAssets: [Asset!]!
+  category(id: ID!) : Category
+  Asset(id: ID!) : Asset
+  tag(id: ID!) : Tag
+  search(search: String!) : [AllSearchResult!]!
+  searchTags(search: String, sortBy: SortTagsBy = latest) : [Tag!]!
+  searchCategories(search: String, sortBy: SortBy = latest) : [Category!]!
+  searchAsset(search: String!, sortBy: SortAssetBy = latest, fileType: String, tags: [Tag!], category: Category) : [Asset!]!
+} Boolean
+}
+type IntegerAttribute {
+  value: Int
+}
+type TypeAttribute {
+  value: Type
+}
+
+
+union AttributeType = StringAttributeType | ArrayAttributeType
+| BooleanAttributeType | IntegerAttributeType | TypeAttribute
+union AssetOrCategory = Asset | Category
+union AllSearchResult = Asset | Category | Tag
+
+enum SortBy {
+  latest,
+  popular,
+  oldest,
+  biggest
+}
+
+enum SortAssetBy {
+  latest,
+  oldest
+}
+
+
+type Query {
+  getAllAssets: [Asset!]!
+  category(id: ID!) : Category
+  Asset(id: ID!) : Asset
+  tag(id: ID!) : Tag
+  search(search: String!) : [AllSearchResult!]!
+  searchTags(search: String, sortBy: SortTagsBy = latest) : [Tag!]!
+  searchCategories(search: String, sortBy: SortBy = latest) : [Category!]!
+  searchAsset(search: String!, sortBy: SortAssetBy = latest, fileType: String, tags: [Tag!], category: Category) : [Asset!]!
+}

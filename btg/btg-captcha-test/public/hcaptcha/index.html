@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html,
+      body {
+        /* height: 100%; */
+        background-color: #000a1d;
+        margin: 0;
+        padding: 0;
+      }
+      #recaptcha {
+        padding: 0px !important;
+        margin: 0px !important;
+      }
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <script
+      src="https://hcaptcha.com/1/api.js?onload=onloadCallback"
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="center">
+      <div
+        id="recaptcha"
+        class="h-captcha"
+        data-sitekey="b448c4e0-2f56-4cf0-97f7-7475ea59a26e"
+        data-callback="onSubmit"
+        data-size="invisible"
+      ></div>
+    </div>
+    This site is protected by hCaptcha and its
+    <a href="https://hcaptcha.com/privacy">Privacy Policy</a> and
+    <a href="https://hcaptcha.com/terms">Terms of Service</a> apply.
+
+    <script type="text/javascript">
+      function onloadCallback() {
+        hcaptcha.execute();
+      }
+      function onSubmit(response) {
+        RecaptchaFlutterChannel.postMessage(response);
+      }
+    </script>
+  </body>
+</html>

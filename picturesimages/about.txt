@@ -1,0 +1,37 @@
+about https://www.figma.com/file/yan66lWg7qLVvjKSzf1otD/Archive?node-id=0%3A1
+
+obsidian/categorization system
+
+db diagram https://app.creately.com/diagram/HLcjrec2yoi/edit
+
+how to get the attributes?
+
+//get types
+select Type.name from Asset_Has_Types left join Type where Asset_Has_Types.assetId = 1
+types = [1,2,3]
+//get attributes
+select from Attribute where Attribute.id is 1,2,3
+//get values
+select Attribute.name, Value.value from Value where Value.attributeId = 
+
+
+Assets
+video.mp4 -> Video
+image.png -> Image, Meme
+
+types
+Video
+Image
+
+
+attributes
+Video | name
+Video | duration
+Video | quality
+Image | name
+Image | quality
+Image | transcript
+
+values
+Video | name | video.mp4 | "video.png"
+Image | name | image.png | "image.png"

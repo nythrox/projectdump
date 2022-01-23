@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div
+      class="g-recaptcha"
+      data-sitekey="6LcnMHcaAAAAAHyLYNgd-_fPNF4748PI0OaGocip"
+      data-callback="onSubmit"  
+    ></div>
+  </body>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcnMHcaAAAAAHyLYNgd-_fPNF4748PI0OaGocip"></script>
+  <script>
+    grecaptcha.ready(function () {
+      grecaptcha.execute("6LcnMHcaAAAAAHyLYNgd-_fPNF4748PI0OaGocip", {
+        action: "submit",
+      });
+    });
+    function onSubmit(token) {
+      RecaptchaFlutterChannel.postMessage(token);
+    }
+  </script>
+</html>

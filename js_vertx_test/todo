@@ -1,0 +1,3 @@
+solve error handling
+add custom exception filters
+add custom insterceptors (choose what order to put middleware, what order to put requests)

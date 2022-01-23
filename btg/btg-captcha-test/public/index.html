@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html,
+      body,
+      .center {
+        height: 100%;
+        background-color: #000a1d;
+        margin: 0;
+        padding: 0;
+      }
+      #recaptcha {
+        padding: 0px !important;
+        margin: 0px !important;
+      }
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=onloadCallback"
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="center">
+      <div
+        id="recaptcha"
+        class="g-recaptcha"
+        data-sitekey="6LcIYXMaAAAAAEaeUmBU5DupeWr4oM4v6-_R-diT"
+        data-callback="onSubmit"
+        data-size="invisible"
+      ></div>
+    </div>
+    <script type="text/javascript">
+      function onloadCallback() {
+        grecaptcha.execute();
+      }
+      function onSubmit(response) {
+        RecaptchaFlutterChannel.postMessage(response);
+      }
+    </script>
+  </body>
+</html>

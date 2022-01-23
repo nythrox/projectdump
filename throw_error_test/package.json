@@ -1,0 +1,31 @@
+{
+  "name": "throw_error_test",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "prestart": "tsc",
+    "pretest": "tsc",
+    "start": "es4x-launcher",
+    "test": "js_vertx_test test dist/index.test.js",
+    "postinstall": "es4x install",
+    "dockerfile": "es4x dockerfile"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.2.2",
+    "@vertx/unit": "^3.8.5",
+    "es4x-pm": "^0.10.1"
+  },
+  "dependencies": {
+    "@vertx/core": "^3.8.5",
+    "@vertx/web": "^3.8.5"
+  },
+  "mvnDependencies": [
+    "io.vertx:vertx-lang-js:3.8.5",
+    "io.vertx:vertx-rx-js:3.8.5"
+  ]
+}

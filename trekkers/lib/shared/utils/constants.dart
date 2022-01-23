@@ -1,0 +1,1 @@
+const String URL_IMG= "https://trekkers.sevenclicks.us";

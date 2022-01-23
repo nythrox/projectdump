@@ -1,0 +1,13 @@
+1:
+JSON
+
+
+2: ValueArray
+   ValueNumber
+   ValueString
+   ValueBool
+
+3: Value
+   is_array
+   is_string
+   is_bool

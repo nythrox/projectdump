@@ -1,0 +1,436 @@
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+	;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+/*----------------MENU---------------*/
+
+.navbar-dark {background-color:black!important}
+.menu a {
+	color: white
+}
+
+.menu a:hover {
+	text-decoration: none;
+}
+
+.menu-content {
+	display: flex;
+	align-items: center;
+}
+
+.menu ul {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 0px;
+}
+
+.menu ul li {
+	margin-right: 50px;
+}
+
+.menu-logo {
+	margin-bottom: 0px;
+	font-size: 1.5rem;
+	margin-right: 40px;
+}
+
+
+/*----------------SUBMENU------------------------*/
+
+.submenu {
+	position: sticky;
+	background-color: white;
+}
+
+.submenu a:hover {
+	text-decoration: none;
+}
+
+.submenu a {
+	color: black;
+}
+
+.submenu-content {
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+
+.submenu-content ul {
+	margin-bottom: 0px;
+}
+
+.submenu-content::-webkit-scrollbar {
+	height: 2px;
+	width: 2px;
+	background: transparent;
+}
+
+.submenu-content::-webkit-scrollbar-thumb:horizontal {
+	background: #000;
+	border-radius: 10px;
+}
+
+submenu-content ul {
+	margin: 0px;
+}
+
+.submenu-content ul li {
+	padding: 10px;
+	display: inline-block;
+}
+
+
+/*---------------HERO-------------------------*/
+
+.hero {
+	padding-top: 125px;
+	padding-bottom: 125px;
+	background: linear-gradient(30deg, rgb(42, 126, 221), rgb(199, 27, 185));
+}
+
+.hero-content {
+	color: white;
+}
+.post-content {
+	color:white;
+}
+.hero-title h1 {
+	font-size: 3rem;
+}
+
+.hero-subtitle {
+	font-size: 1.25rem;
+}
+
+.book-hero {
+	background: linear-gradient(30deg, rgb(42, 126, 221), rgb(199, 27, 185));
+    text-align: justify;
+}
+
+.book-hero [class*="col"] {
+	display: flex;
+	align-items: center;
+    flex-wrap: wrap;
+    margin-bottom:40px;
+}
+
+.book-row {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	box-shadow: 0 15px 30px -5px gray;
+}
+
+.book-image {
+	padding: 0px!important;
+	justify-content: center;
+}
+
+.book-image img {
+    text-align:left;
+    width: 100%;
+    height:100%;
+    
+}
+
+.book-title h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	font-weight: 700;
+	font-family: Nunito Sans;
+	/*or nunito sans*/
+	margin-bottom: 10px
+}
+
+.book-hero .blog-author h4 {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-family: Nunito Sans;
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+
+.book-subtitle p {
+    font-size: 1.1rem;
+}
+.book-subtitle {
+    margin-bottom:30px;
+    margin-top:30px;}
+
+.button-container button {
+	width: 100%;
+	margin-bottom: 10px;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+@media (min-width:540px) {
+    .book-img img {box-shadow:none}
+	.book-info {
+		margin-bottom: 0px;
+		margin-top: 0px;
+    }
+    
+.book-hero [class*="col"] {
+    margin-bottom:0px;
+}
+}
+@media (min-width:730px) {
+    .book-title h1 {
+        font-size: 3rem;
+    }
+}
+@media (min-width:830px) {
+	.button-container button {
+		margin-right: 10px;
+	}
+	.book-image img {
+		margin-bottom: 0px;
+        box-shadow: none;
+	}
+	.button-container button {
+		width: auto;
+	}
+	.book-title h1 {
+		font-size: 4rem;
+		margin-top: 0px;
+		margin-bottom: 20px;
+		font-family: none Sans;
+	}
+	.book-info {
+        margin-left: 20px;
+        margin-right:20px;
+		margin-bottom: 40px;
+		margin-top: 40px;
+    }
+    #two {
+        flex-grow: 2;
+        
+    max-width: none;
+    }
+	.blog-author h4 {
+		margin-bottom: -12px;
+    }
+    .book-row {
+        justify-content: flex-start;
+    }
+}
+
+.button-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/*-------------------HOMEPAGE SECTIONS--------------------*/
+
+section {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.section-title {
+	color: rgb(80, 79, 79);
+}
+
+.section-title h1 {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+.item {
+	padding: 15px
+}
+.item a {
+  color:black;
+}
+.thumb {
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: rgba(85, 84, 84, 0.5) 5px 5px 20px;
+}
+
+.thumb-details {
+	padding: 10px;
+}
+
+.thumb-img img {
+	width: 100%;
+	max-height: 150px;
+	object-fit: cover;
+}
+
+.thumb-details h1 {
+	font-size: 1.25rem;
+}
+
+.thumb-details p {
+	font-size: .75rem
+}
+
+.section-tier {
+	font-weight: 700;
+}
+
+.section-container {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.section-inner {
+	width: 100%;
+	transition: 1s all;
+	/* animation: slide 30s linear infinite alternate;*/
+	position: relative;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(0px)
+	}
+	100% {
+		transform: translateX(-50%)
+	}
+}
+
+.leftLst {
+	position: absolute;
+	width: 50px;
+	z-index: 99;
+	top: 50%;
+	left: 0;
+	transform: scaleX(-1);
+	cursor: pointer;
+}
+
+.rightLst {
+	position: absolute;
+	cursor: pointer;
+	width: 50px;
+	right: 0;
+	z-index: 99;
+	top: 50%
+}
+
+@media (min-width:1200px) {
+	.rightLst {
+		right: 50px;
+	}
+	.leftLst {
+		left: 50px;
+	}
+}
+
+
+/*--------------footer*--------------*/
+
+footer {
+	padding: 20px;
+	border-bottom: 5px solid black;
+}
+
+.footer-row {
+	display: flex;
+	flex-wrap: nowrap!important;
+	align-items: space-between;
+}
+
+.f-left {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	flex-basis: 50%;
+}
+
+.f-right {
+	text-align: right;
+	flex-basis: 50%;
+}
+
+.footer a {
+	margin-right: 20px;
+}
+
+.footer .menu-logo {
+	margin-right: 20px;
+}
+
+.btn-primary {
+	color: black!important;
+	background: white!important;
+	padding: 10px 20px 10px 20px!important;
+	border-radius: 4px!important;
+	border: 1px solid white!important;
+	transition: .25s all!important;
+}
+
+.btn-primary:hover {
+	color: white!important;
+	background: black!important;
+	border: 1px solid black!important;
+}
+
+.btn-secondary {
+	border-radius: 100px!important;
+	padding-right: 50px!important;
+	padding-left: 50px!important;
+	padding-top: 15px!important;
+	padding-bottom: 15px!important;
+	border: none!important;
+	text-transform: uppercase;
+	font-weight: 800!important;
+	font-family: nunito sans!important;
+	letter-spacing: 3px;
+	background: #2fbf60!important;
+}
+
+.btn-secondary:hover {
+	background: #249249!important;
+}

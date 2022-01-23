@@ -1,0 +1,6 @@
+-- INSERT INTO Assets (name, link) VALUES ('myasset', '/myasset');
+-- SELECT * FROM Assets;
+-- INSERT INTO Types (name) VALUES ('Image');
+-- SELECT * FROM Types;
+INSERT INTO Attributes (attribute_name, type_id) VALUES ('size', '54bc97ec-6449-4c05-8861-5e878b7c8fa8')
+SELECT * FROM ATTRIBUTES;
